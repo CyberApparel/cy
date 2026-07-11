@@ -7,20 +7,15 @@
       "enabled": true
 	  "qr_url": "https://cyberapparel.github.io/cy/qr-d001-v0-1/?id=test-1"
     },
-    "d001-v0.1": {
+    "d001-v0-1": {
       "alias": "store",
       "enabled": true
-	  "qr_url": "https://cyberapparel.github.io/qr/?id=d001-v0.1"
+	  "qr_url": "https://cyberapparel.github.io/qr-d001-v0-1/?id=d001-v0-1"
     },
-    "business-card-v1": {
+    "d001-insert-v0-1": {
       "alias": "store",
       "enabled": true
-	  "qr_url": "https://cyberapparel.github.io/qr/?id=business-card-v0.1"
-    },
-    "d001-insert-v1": {
-      "alias": "store",
-      "enabled": true
-	  "qr_url": "https://cyberapparel.github.io/qr/?id=d001-insert-v1"
+	  "qr_url": "https://cyberapparel.github.io/qr-d001-v0-1/?id=d001-insert-v0-1"
     },
     "d001-origin": {
       "destination": "../pages/verify.html?id=CA-AI-CHUNK-0001",
