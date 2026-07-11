@@ -5,7 +5,7 @@
     "store": {
       "destination": "https://cyberapparel.store/",
       "enabled": true
-	  "qr_url": "https://cyberapparel.github.io/qr/?id=test-1"
+	  "qr_url": "https://cyberapparel.github.io/cy/qr-d001-v0-1/?id=test-1"
     },
     "d001-v0.1": {
       "alias": "store",
