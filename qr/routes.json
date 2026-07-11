@@ -5,6 +5,7 @@
     "store": {
       "destination": "https://cyberapparel.store/",
       "enabled": true
+	  "qr_url": "https://cyberapparel.github.io"
     },
     "d001": {
       "alias": "store",
@@ -14,7 +15,7 @@
     "business-card-v1": {
       "alias": "store",
       "enabled": true
-	  "qr_url": "https://cyberapparel.github.io/qr/?id=business-card-v1"
+	  "qr_url": "https://cyberapparel.github.io/qr/?id=business-card-v0.1"
     },
     "d001-insert-v1": {
       "alias": "store",
