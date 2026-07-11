@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "default": "store",
+  "routes": {
+    "store": {
+      "destination": "https://cyberapparel.store/",
+      "enabled": true
+    },
+    "d001": {
+      "alias": "store",
+      "enabled": true
+	  "qr_url": "https://cyberapparel.github.io/qr/?id=d001"
+    },
+    "business-card-v1": {
+      "alias": "store",
+      "enabled": true
+	  "qr_url": "https://cyberapparel.github.io/qr/?id=business-card-v1"
+    },
+    "d001-insert-v1": {
+      "alias": "store",
+      "enabled": true
+	  "qr_url": "https://cyberapparel.github.io/qr/?id=d001-insert-v1"
+    },
+    "d001-origin": {
+      "destination": "../pages/verify.html?id=CA-AI-CHUNK-0001",
+      "enabled": true
+    }
+  }
+}

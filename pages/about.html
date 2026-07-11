@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Cyber Apparel Co.</title>
+  <meta name="description" content="Cyber Apparel Co. — apparel for the people who ship. The philosophy behind authenticated developer clothing." />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">
+    <span class="nav-logo-mark">CA</span>
+    Cyber Apparel Co.
+  </a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="drop001.html">Drop 001</a></li>
+    <li><a href="verify.html">Verify</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="legal.html">Legal / Marks</a></li>
+  </ul>
+  <a href="drop001.html" class="nav-cta">Get the Drop</a>
+  <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="../index.html">Home</a>
+  <a href="drop001.html">Drop 001</a>
+  <a href="verify.html">Verify</a>
+  <a href="about.html">About</a>
+  <a href="legal.html">Legal / Marks</a>
+</div>
+
+<div class="page-wrap">
+
+  <!-- OPENER -->
+  <section class="section">
+    <div class="container">
+      <div class="section-label">Who We Are</div>
+      <div class="about-opener">
+        Clothing that can prove<br/>
+        what it is, where it came from,<br/>
+        <span class="muted">and when it was made —</span><br/>
+        without asking you<br/>
+        to trust us.
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;max-width:900px;" class="reveal">
+        <p style="font-size:0.8rem;color:var(--dim);line-height:1.9;font-weight:200;">
+          Most limited apparel runs on scarcity theater. The drop is real because the hype says so.
+          You believe it because enough people believe it. We built a different system:
+          every piece carries a cryptographic identity that exists outside the brand.
+          The hashes are there whether we are or not.
+        </p>
+        <p style="font-size:0.8rem;color:var(--dim);line-height:1.9;font-weight:200;">
+          Cyber Apparel Co. is for the people who understand the infrastructure.
+          Who know what a SHA-256 hash is. Who've pushed to main at 2am.
+          Who grinned when they read "AI Gits Better By The Chunk" — not because it's a pun,
+          but because it's accurate.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FULL-BLEED LIFESTYLE -->
+  <div style="position:relative;overflow:hidden;max-height:70vh;">
+    <img
+      src="../assets/img/lifestyle-collage.png"
+      alt="Cyber Apparel Co. — people who ship"
+      style="width:100%;object-fit:cover;object-position:top;max-height:70vh;display:block;"
+      loading="lazy"
+    />
+    <div style="position:absolute;inset:0;background:linear-gradient(to bottom,transparent 40%,var(--black) 100%);pointer-events:none;"></div>
+  </div>
+
+  <hr class="rule" />
+
+  <!-- PRINCIPLES -->
+  <section class="section">
+    <div class="container">
+      <div class="section-label reveal">Operating Principles</div>
+      <h2 class="section-title reveal" style="margin-bottom:3.5rem;">What we build toward</h2>
+
+      <ul class="principle-list">
+        <li class="principle-item reveal">
+          <span class="principle-num">01</span>
+          <div class="principle-text">
+            <strong>Verification is non-optional</strong>
+            Every release includes the full authentication stack — artifact ID, three SHA-256 hashes,
+            creator mark, and a permanent lookup record. There is no tier of release that skips this.
+            If it can't be verified, it doesn't ship.
+          </div>
+        </li>
+        <li class="principle-item reveal">
+          <span class="principle-num">02</span>
+          <div class="principle-text">
+            <strong>The record outlives the brand</strong>
+            Hashes are committed at release and never change. The artifact data is stored as plain JSON —
+            no proprietary tooling, no database, no login. If Cyber Apparel Co. disappears tomorrow,
+            your verification record still works.
+          </div>
+        </li>
+        <li class="principle-item reveal">
+          <span class="principle-num">03</span>
+          <div class="principle-text">
+            <strong>Drops are statements, not products</strong>
+            Each release documents something specific about a moment in technology or culture.
+            Drop 001 documents the inflection point when AI became infrastructure.
+            Future drops will mark other moments worth wearing.
+          </div>
+        </li>
+        <li class="principle-item reveal">
+          <span class="principle-num">04</span>
+          <div class="principle-text">
+            <strong>Typography is the design</strong>
+            No graphics. No logos. No characters. Just type — set in IBM Plex Mono, the typeface
+            of terminals and technical documentation — arranged so the garment itself becomes a diagram
+            of the thing it's about.
+          </div>
+        </li>
+        <li class="principle-item reveal">
+          <span class="principle-num">05</span>
+          <div class="principle-text">
+            <strong>IP is explicitly claimed</strong>
+            Brand names, phrases, and marks are claimed per-drop and listed on the Legal / Marks page.
+            We don't rely on implicit ownership. The record is public. The claim is clear.
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <hr class="rule" />
+
+  <!-- TECHNICAL STACK -->
+  <section class="section" style="background:#060606;">
+    <div class="container">
+      <div class="section-label reveal">Authentication Stack</div>
+      <h2 class="section-title reveal" style="margin-bottom:2.5rem;">How it works under the hood</h2>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:var(--border);" class="reveal">
+        <div style="background:#060606;padding:2rem;">
+          <div style="font-family:var(--font);font-size:0.52rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--mint);margin-bottom:0.75rem;">SHA-256</div>
+          <p style="font-size:0.75rem;color:var(--dim);line-height:1.8;font-weight:200;">
+            Three independent hashes per artifact. Garment production spec, artwork master, metadata JSON.
+            Computed at drop time. Static forever.
+          </p>
+        </div>
+        <div style="background:#060606;padding:2rem;">
+          <div style="font-family:var(--font);font-size:0.52rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--mint);margin-bottom:0.75rem;">Static JSON</div>
+          <p style="font-size:0.75rem;color:var(--dim);line-height:1.8;font-weight:200;">
+            Artifact data stored as plain <code style="color:var(--white);font-size:0.68rem;">artifacts.json</code> —
+            readable in any text editor. No API. No backend. No rate limits.
+          </p>
+        </div>
+        <div style="background:#060606;padding:2rem;">
+          <div style="font-family:var(--font);font-size:0.52rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--mint);margin-bottom:0.75rem;">QR → Verify</div>
+          <p style="font-size:0.75rem;color:var(--dim);line-height:1.8;font-weight:200;">
+            Each garment's interior QR links to <code style="color:var(--white);font-size:0.68rem;">/verify?id=CA-AI-CHUNK-0001</code>.
+            One scan returns the full authenticated record.
+          </p>
+        </div>
+        <div style="background:#060606;padding:2rem;">
+          <div style="font-family:var(--font);font-size:0.52rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--mint);margin-bottom:0.75rem;">GitHub Pages</div>
+          <p style="font-size:0.75rem;color:var(--dim);line-height:1.8;font-weight:200;">
+            The entire registry is a static site. No server. No database. Deployable anywhere.
+            The site itself ships with a <code style="color:var(--white);font-size:0.68rem;">site-manifest.json</code>
+            containing real SHA-256 hashes of its own files.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule" />
+
+  <!-- SPLIT: models + text -->
+  <section class="section">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);" class="reveal">
+          <img src="../assets/img/model-2.png" alt="Drop 001 model" style="width:100%;aspect-ratio:2/3;object-fit:cover;object-position:top;background:#050505;" loading="lazy" />
+          <img src="../assets/img/model-4.png" alt="Drop 001 model" style="width:100%;aspect-ratio:2/3;object-fit:cover;object-position:top;background:#050505;" loading="lazy" />
+        </div>
+        <div class="reveal">
+          <div class="section-label">The Garment</div>
+          <h3 style="font-size:clamp(1.4rem,2.5vw,2rem);font-weight:600;line-height:1.2;margin:0.75rem 0 1.5rem;">
+            Designed for people<br/>who read type.
+          </h3>
+          <p style="font-size:0.78rem;color:var(--dim);line-height:1.9;font-weight:200;margin-bottom:1rem;">
+            IBM Plex Mono ExtraLight on the front. The weight that reads best on a dark background
+            at 4am. Each word indented further right — the same diagonal rhythm as a git diff,
+            a training loop, a for-each that gets better on every pass.
+          </p>
+          <p style="font-size:0.78rem;color:var(--dim);line-height:1.9;font-weight:200;margin-bottom:1.5rem;">
+            IBM Plex Mono SemiBold on the back. Two words. No decoration.
+            <span style="color:var(--white);">AI .chunk</span> — the way it would look
+            as a variable name right before everything finally clicked.
+          </p>
+          <a href="drop001.html" class="btn btn-sm">View Drop 001 →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="nav-logo-mark">CA</span>
+            Cyber Apparel Co.
+          </div>
+          <div class="footer-tagline">
+            Authenticated Apparel.<br/>Timestamped. Hashed. Real.<br/>
+            For the people who ship.
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="drop001.html">Drop 001</a></li>
+            <li><a href="verify.html">Verify</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="legal.html">Legal / Marks</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Registry</div>
+          <ul class="footer-links">
+            <li><a href="legal.html">Legal / Marks</a></li>
+            <li><a href="verify.html?id=CA-AI-CHUNK-0001">Verify CA-AI-CHUNK-0001</a></li>
+            <li><a href="../artifacts/CA-AI-CHUNK-0001/certificate.txt">Certificate.txt</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2025 Cyber Apparel Co. All rights reserved.</span>
+        <span class="footer-copy">CAC-MARK-001 / CA-AI-CHUNK-0001</span>
+      </div>
+    </div>
+  </footer>
+
+</div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

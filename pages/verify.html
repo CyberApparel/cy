@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verify Artifact — Cyber Apparel Co.</title>
+  <meta name="description" content="Verify the authenticity of your Cyber Apparel Co. garment using the artifact ID." />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <style>
+    /* Terminal-style pre-display for the explainer */
+    .terminal-block {
+      background: #050505;
+      border: 1px solid var(--border);
+      padding: 1.5rem;
+      font-size: 0.62rem;
+      line-height: 1.9;
+      letter-spacing: 0.05em;
+      color: var(--dim);
+      overflow-x: auto;
+    }
+    .terminal-block .t-key   { color: var(--mint); }
+    .terminal-block .t-val   { color: var(--white); }
+    .terminal-block .t-dim   { color: #333; }
+    .terminal-block .t-comment { color: #2a2a2a; }
+
+    .field-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+      gap: 1px;
+      background: var(--border);
+      margin-top: 2rem;
+    }
+    .field-card {
+      background: var(--black);
+      padding: 1.5rem;
+    }
+    .field-card-title {
+      font-size: 0.58rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--mint);
+      margin-bottom: 0.6rem;
+    }
+    .field-card-desc {
+      font-size: 0.72rem;
+      color: var(--dim);
+      line-height: 1.8;
+      font-weight: 200;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">
+    <span class="nav-logo-mark">CA</span>
+    Cyber Apparel Co.
+  </a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="drop001.html">Drop 001</a></li>
+    <li><a href="verify.html" class="active">Verify</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="legal.html">Legal / Marks</a></li>
+  </ul>
+  <a href="drop001.html" class="nav-cta">Get the Drop</a>
+  <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="../index.html">Home</a>
+  <a href="drop001.html">Drop 001</a>
+  <a href="verify.html">Verify</a>
+  <a href="about.html">About</a>
+  <a href="legal.html">Legal / Marks</a>
+</div>
+
+<div class="page-wrap">
+
+  <!-- VERIFY HERO -->
+  <section class="section" style="padding-bottom:0;border-bottom:1px solid var(--border);">
+    <div class="container">
+      <div class="section-label">Authentication Terminal</div>
+      <h1 style="font-size:clamp(2rem,4vw,3.5rem);font-weight:600;line-height:1.1;margin-bottom:1.5rem;margin-top:0.5rem;">
+        Verify Artifact
+      </h1>
+      <p style="max-width:520px;font-size:0.8rem;color:var(--dim);line-height:1.9;font-weight:200;margin-bottom:2.5rem;">
+        Enter the artifact ID from your garment's interior label.
+        The registry will return the full authenticated record —
+        SHA-256 hashes, creator mark, release date, and copyright.
+      </p>
+
+      <form id="verify-form" style="max-width:600px;" onsubmit="return false;">
+        <label class="verify-label" for="artifact-id-input">Artifact ID</label>
+        <div class="verify-input-row">
+          <input
+            type="text"
+            id="artifact-id-input"
+            class="verify-input"
+            placeholder="CA-AI-CHUNK-0001"
+            autocomplete="off"
+            spellcheck="false"
+            autocapitalize="characters"
+          />
+          <button type="submit" id="verify-submit-btn" class="verify-submit">Verify</button>
+        </div>
+        <div class="verify-hint">ID format: CA-[DROP]-[EDITION] — printed on interior label or QR destination</div>
+      </form>
+
+      <!-- Quick lookup pill -->
+      <div style="margin-top:1.5rem;padding-bottom:2.5rem;">
+        <span style="font-size:0.58rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--dim);margin-right:0.75rem;">Quick lookup:</span>
+        <button
+          onclick="document.getElementById('artifact-id-input').value='CA-AI-CHUNK-0001';document.getElementById('verify-form').dispatchEvent(new Event('submit'));"
+          style="font-family:var(--font);font-size:0.6rem;letter-spacing:0.12em;background:transparent;border:1px solid var(--border);color:var(--mint);padding:0.3rem 0.75rem;cursor:pointer;transition:all 0.2s;"
+          onmouseover="this.style.borderColor='var(--mint)'"
+          onmouseout="this.style.borderColor='var(--border)'"
+        >CA-AI-CHUNK-0001</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULT -->
+  <section id="verify-result" class="verify-result">
+    <div class="container">
+      <div id="result-card" class="result-card"></div>
+    </div>
+  </section>
+
+  <hr class="rule" />
+
+  <!-- WHAT YOU'RE SEEING -->
+  <section class="section">
+    <div class="container">
+      <div class="section-label reveal">Authentication Fields</div>
+      <h2 class="section-title reveal" style="margin-bottom:2.5rem;">What the record contains</h2>
+
+      <!-- Terminal preview -->
+      <div class="terminal-block reveal">
+        <span class="t-comment">// CA-AI-CHUNK-0001 — authentication record</span><br/>
+        {<br/>
+        &nbsp;&nbsp;<span class="t-key">"id"</span>:              <span class="t-val">"CA-AI-CHUNK-0001"</span>,<br/>
+        &nbsp;&nbsp;<span class="t-key">"status"</span>:          <span class="t-val">"AUTHENTIC"</span>,<br/>
+        &nbsp;&nbsp;<span class="t-key">"release_date"</span>:    <span class="t-val">"2025-06-01"</span>,<br/>
+        &nbsp;&nbsp;<span class="t-key">"creator_mark"</span>:    <span class="t-val">"Cyber Apparel Co. / CAC-MARK-001"</span>,<br/>
+        &nbsp;&nbsp;<span class="t-key">"sha256_garment"</span>:  <span class="t-val">"a3f8c2e1..."</span>,<br/>
+        &nbsp;&nbsp;<span class="t-key">"sha256_artwork"</span>:  <span class="t-val">"b7d2f1a0..."</span>,<br/>
+        &nbsp;&nbsp;<span class="t-key">"sha256_metadata"</span>: <span class="t-val">"c9e4d3b2..."</span>,<br/>
+        &nbsp;&nbsp;<span class="t-key">"claimed_marks"</span>:   <span class="t-val">["CYBER APPAREL CO.", "AI GITS BETTER BY THE CHUNK", ...]</span><br/>
+        }
+      </div>
+
+      <div class="field-cards reveal">
+        <div class="field-card">
+          <div class="field-card-title">SHA-256 Hashes</div>
+          <p class="field-card-desc">Three separate hashes — garment production spec, artwork master file, and metadata JSON. Generated at release. Immutable.</p>
+        </div>
+        <div class="field-card">
+          <div class="field-card-title">Creator Mark</div>
+          <p class="field-card-desc">Ties the artifact to its originator. Format: Studio / Mark-ID. Registered at drop time. Cannot be retroactively applied.</p>
+        </div>
+        <div class="field-card">
+          <div class="field-card-title">Release Date</div>
+          <p class="field-card-desc">ISO 8601 date when hashes were committed to the registry. Items appearing before this date are not authenticated editions.</p>
+        </div>
+        <div class="field-card">
+          <div class="field-card-title">Claimed Marks</div>
+          <p class="field-card-desc">All brand identifiers and phrases claimed in connection with this artifact. Unauthorized use constitutes trademark infringement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule" />
+
+  <!-- DOWNLOAD CERTIFICATE -->
+  <section class="section-sm">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:2rem;">
+      <div class="reveal">
+        <div class="section-label">Plain-Text Certificate</div>
+        <p style="font-size:0.75rem;color:var(--dim);margin-top:0.25rem;font-weight:200;">Download the raw certificate of authenticity for CA-AI-CHUNK-0001.</p>
+      </div>
+      <div style="display:flex;gap:1rem;flex-wrap:wrap;" class="reveal">
+        <a href="../artifacts/CA-AI-CHUNK-0001/certificate.txt" class="btn btn-sm" download>certificate.txt</a>
+        <a href="../artifacts/CA-AI-CHUNK-0001/manifest.txt" class="btn btn-sm" download>manifest.txt</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="nav-logo-mark">CA</span>
+            Cyber Apparel Co.
+          </div>
+          <div class="footer-tagline">
+            Authenticated Apparel.<br/>Timestamped. Hashed. Real.
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="drop001.html">Drop 001</a></li>
+            <li><a href="verify.html">Verify</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="legal.html">Legal / Marks</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Artifact Files</div>
+          <ul class="footer-links">
+            <li><a href="../artifacts/CA-AI-CHUNK-0001/certificate.txt">Certificate.txt</a></li>
+            <li><a href="../artifacts/CA-AI-CHUNK-0001/manifest.txt">Manifest.txt</a></li>
+            <li><a href="../artifacts/CA-AI-CHUNK-0001/origin-record.txt">Origin Record</a></li>
+            <li><a href="../data/site-manifest.json">Site Manifest</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2025 Cyber Apparel Co. All rights reserved.</span>
+        <span class="footer-copy">CAC-MARK-001 / CA-AI-CHUNK-0001</span>
+      </div>
+    </div>
+  </footer>
+
+</div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

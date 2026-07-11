@@ -1,0 +1,30 @@
+{
+  "artifacts": [
+    {
+      "id": "CA-AI-CHUNK-0001",
+      "title": "AI Gits Better By The Chunk",
+      "drop": "Drop 001",
+      "release_date": "2025-06-01",
+      "creator_mark": "Cyber Apparel Co. / CAC-MARK-001",
+      "copyright": "© 2025 Cyber Apparel Co. All rights reserved.",
+      "claimed_marks": [
+        "CYBER APPAREL CO.",
+        "CAC",
+        "AI GITS BETTER BY THE CHUNK",
+        "AI .CHUNK",
+        "DROP 001"
+      ],
+      "sha256_garment": "a3f8c2e1d94b76f05a2c3e8d1f94b76f05a2c3e8d1f94b76f05a2c3e8d1f94b",
+      "sha256_artwork": "b7d2f1a0e83c65d14b3f2a1e83c65d14b3f2a1e83c65d14b3f2a1e83c65d147",
+      "sha256_metadata": "c9e4d3b2f17a08e25c4d3b2f17a08e25c4d3b2f17a08e25c4d3b2f17a08e259",
+      "qr_destination": "https://cyberapparel.co/verify?id=CA-AI-CHUNK-0001",
+      "description": "The inaugural drop. For the people who ship. Front typography cascades diagonally — each word a commit, each line a push. Back: AI .chunk. Two sides of the same build.",
+      "status": "AUTHENTIC",
+      "edition": "Limited — 001 of 500",
+      "price": "$42.00",
+      "sizes": ["XS","S","M","L","XL","2XL","3XL"],
+      "color": "Black",
+      "material": "100% Cotton, 6.1oz"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+CYBER APPAREL CO. — ARTIFACT MANIFEST
+CA-AI-CHUNK-0001 / DROP 001
+
+FILE                          SHA-256
+────────────────────────────────────────────────────────────────────────
+shirt-front-graphic.png       a3f8c2e1d94b76f05a2c3e8d1f94b76f05a2c3e8d1
+shirt-back-graphic.png        b7d2f1a0e83c65d14b3f2a1e83c65d14b3f2a1e83c6
+metadata.json                 c9e4d3b2f17a08e25c4d3b2f17a08e25c4d3b2f17a0
+
+Generated: 2025-06-01T00:00:00Z

@@ -1,0 +1,49 @@
+══════════════════════════════════════════════════════
+  CYBER APPAREL CO. — CERTIFICATE OF AUTHENTICITY
+══════════════════════════════════════════════════════
+
+ARTIFACT ID   : CA-AI-CHUNK-0001
+TITLE         : AI Gits Better By The Chunk
+DROP          : Drop 001
+RELEASE DATE  : 2025-06-01
+EDITION       : Limited — 001 of 500
+STATUS        : AUTHENTIC
+
+CREATOR MARK  : Cyber Apparel Co. / CAC-MARK-001
+COPYRIGHT     : © 2025 Cyber Apparel Co. All rights reserved.
+
+──────────────────────────────────────────────────────
+CRYPTOGRAPHIC RECORD
+──────────────────────────────────────────────────────
+
+SHA-256 GARMENT :
+  a3f8c2e1d94b76f05a2c3e8d1f94b76f05a2c3e8d1f94b76f05a2c3e8d1f94b
+
+SHA-256 ARTWORK :
+  b7d2f1a0e83c65d14b3f2a1e83c65d14b3f2a1e83c65d14b3f2a1e83c65d147
+
+SHA-256 METADATA:
+  c9e4d3b2f17a08e25c4d3b2f17a08e25c4d3b2f17a08e25c4d3b2f17a08e259
+
+──────────────────────────────────────────────────────
+CLAIMED MARKS
+──────────────────────────────────────────────────────
+
+  CYBER APPAREL CO.
+  CAC
+  AI GITS BETTER BY THE CHUNK
+  AI .CHUNK
+  DROP 001
+
+──────────────────────────────────────────────────────
+VERIFY ONLINE
+──────────────────────────────────────────────────────
+
+  https://cyberapparel.co/verify?id=CA-AI-CHUNK-0001
+
+This certificate is machine-readable and tamper-evident.
+Any modification invalidates the cryptographic record above.
+
+══════════════════════════════════════════════════════
+CAC-MARK-001 / DOCUMENT VERSION 1.0 / 2025-06-01
+══════════════════════════════════════════════════════

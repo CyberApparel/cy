@@ -1,0 +1,9 @@
+{
+  "generated": "2025-06-01T00:00:00Z",
+  "files": {
+    "certificate.txt": "7da794ee8bcaaa5311e49a8cd25a678b5b0a2ee8be8325ef24f9faced11c6b42",
+    "manifest.txt": "0e63a35e3060750190290bb0f71523aecd521acd1c8de500d59e01bb49646e92",
+    "origin-record.txt": "c5c8eb08eeb394f6a85371b08be63186c2caeaf36f5389884eb0cf801e8fee0b",
+    "artifacts.json": "fa96b5e9837773116755f8a4473d6b2c43d8bfb661d86c922adddd767fccab77"
+  }
+}

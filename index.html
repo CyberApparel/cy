@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cyber Apparel Co. — For the People Who Ship</title>
+  <meta name="description" content="Cyber Apparel Co. Drop 001 — AI Gits Better By The Chunk. Authenticated apparel for developers. SHA-256 verified." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    /* Root-level path overrides for nav */
+    .nav-links a[href^="pages/"] { }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="index.html" class="nav-logo">
+    <span class="nav-logo-mark">CA</span>
+    Cyber Apparel Co.
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="pages/drop001.html">Drop 001</a></li>
+    <li><a href="pages/verify.html">Verify</a></li>
+    <li><a href="pages/about.html">About</a></li>
+    <li><a href="pages/legal.html">Legal / Marks</a></li>
+  </ul>
+  <a href="pages/drop001.html" class="nav-cta">Get the Drop</a>
+  <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="pages/drop001.html">Drop 001</a>
+  <a href="pages/verify.html">Verify</a>
+  <a href="pages/about.html">About</a>
+  <a href="pages/legal.html">Legal / Marks</a>
+</div>
+
+<div class="page-wrap">
+
+  <!-- HERO -->
+  <section class="hero">
+    <!-- Left: cascade text mirroring the shirt design -->
+    <div class="hero-left">
+      <div class="hero-pre">Drop 001 — Now Live</div>
+
+      <div class="cascade" aria-label="AI Gits Better By The Chunk">
+        <span class="cascade-line">AI</span>
+        <span class="cascade-line">&lt;/&gt;</span>
+        <span class="cascade-line">Gits</span>
+        <span class="cascade-line">Better</span>
+        <span class="cascade-line">By</span>
+        <span class="cascade-line">The</span>
+        <span class="cascade-line">Chunk</span>
+        <span class="cascade-line">&lt;/&gt;</span>
+      </div>
+
+      <div class="hero-sub">
+        <p class="hero-desc">
+          Apparel for the people who ship. Each piece cryptographically authenticated —
+          SHA-256 hashed, creator-marked, and timestamped on release. 500 editions. No reprints.
+        </p>
+        <div class="hero-actions">
+          <a href="pages/drop001.html" class="btn btn-fill">Get Drop 001</a>
+          <a href="pages/verify.html" class="btn">Verify Artifact</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: shirt reveal with flip -->
+    <div class="hero-right">
+      <div class="hero-shirt-bg"></div>
+      <div class="hero-shirt-wrap">
+        <img
+          id="hero-shirt-img"
+          class="hero-shirt"
+          src="assets/img/shirt-front.png"
+          data-front="assets/img/shirt-front.png"
+          data-back="assets/img/shirt-back.png"
+          alt="AI Gits Better By The Chunk — Drop 001 T-Shirt Front"
+        />
+      </div>
+      <button class="shirt-flip-btn" id="shirt-flip-btn">View Back →</button>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-inner">
+      <!-- Duplicated for seamless loop -->
+      <span class="ticker-item"><span>CA-AI-CHUNK-0001</span> — Drop 001 — 500 Editions</span>
+      <span class="ticker-item">SHA-256 Authenticated</span>
+      <span class="ticker-item">IBM Plex Mono</span>
+      <span class="ticker-item">Black / White / 6.1oz Cotton</span>
+      <span class="ticker-item"><span>$42.00</span> — Limited</span>
+      <span class="ticker-item">For the People Who Ship</span>
+      <span class="ticker-item">git commit -m "drop 001"</span>
+      <span class="ticker-item">AI Gits Better By The Chunk</span>
+      <span class="ticker-item"><span>CA-AI-CHUNK-0001</span> — Drop 001 — 500 Editions</span>
+      <span class="ticker-item">SHA-256 Authenticated</span>
+      <span class="ticker-item">IBM Plex Mono</span>
+      <span class="ticker-item">Black / White / 6.1oz Cotton</span>
+      <span class="ticker-item"><span>$42.00</span> — Limited</span>
+      <span class="ticker-item">For the People Who Ship</span>
+      <span class="ticker-item">git commit -m "drop 001"</span>
+      <span class="ticker-item">AI Gits Better By The Chunk</span>
+    </div>
+  </div>
+
+  <!-- EDITORIAL PHOTO GRID -->
+  <section class="section" style="padding:0;">
+    <div class="editorial-grid">
+      <div class="ed-cell ed-cell-1 reveal">
+        <img src="assets/img/lifestyle-cafe.png" alt="Developer wearing the shirt at a cafe" loading="lazy" />
+        <div class="ed-caption">The everyday build environment</div>
+      </div>
+      <div class="ed-cell ed-cell-2 reveal">
+        <img src="assets/img/shirt-back.png" alt="AI .chunk back of shirt" loading="lazy" style="object-position:top center;" />
+        <div class="ed-caption">AI .chunk — rear typography</div>
+      </div>
+      <div class="ed-cell ed-cell-3 reveal">
+        <img src="assets/img/lifestyle.png" alt="Lifestyle" loading="lazy" />
+        <div class="ed-caption">Wearable timestamp</div>
+      </div>
+      <div class="ed-cell ed-cell-4 reveal">
+        <img src="assets/img/lifestyle-desk.png" alt="Folded shirt at desk" loading="lazy" />
+        <div class="ed-caption">Before the first commit</div>
+      </div>
+      <div class="ed-cell ed-cell-5 reveal">
+        <img src="assets/img/collar-closeup.png" alt="Collar closeup" loading="lazy" />
+        <div class="ed-caption">IBM Plex Mono ExtraLight</div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule" />
+
+  <!-- PHILOSOPHY TEASER -->
+  <section class="section">
+    <div class="container">
+      <div class="philosophy">
+        <div class="philosophy-statement reveal">
+          Every model<br/>
+          <span class="accent">is a compression</span><br/>
+          of what came<br/>
+          before it.
+        </div>
+        <div class="philosophy-body">
+          <p class="reveal">
+            AI gets better by the chunk. Not in breakthroughs — in batches.
+            Token by token. Commit by commit. The diagonal cascade on the front of this shirt
+            is that trajectory made visible.
+          </p>
+          <p class="reveal">
+            This is apparel for people who understand that. Who've sat in the glow of a
+            terminal at 2am and watched something get better — one chunk at a time.
+          </p>
+          <div class="reveal" style="margin-top:1rem;">
+            <a href="pages/about.html" class="btn btn-sm">The Full Story →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule" />
+
+  <!-- AUTHENTICATION CALLOUT -->
+  <section class="section" style="background:#060606;">
+    <div class="container">
+      <div class="section-label reveal">Authentication Protocol</div>
+      <h2 class="section-title reveal" style="margin-bottom:3rem;">Every piece is verifiable.<br/>Always.</h2>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:var(--border);" class="reveal">
+        <div style="background:#060606;padding:2rem;">
+          <div style="font-size:0.52rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--dim);margin-bottom:1rem;">01 — HASH</div>
+          <div style="font-size:0.8rem;font-weight:600;margin-bottom:0.75rem;">Three SHA-256 hashes</div>
+          <p style="font-size:0.72rem;color:var(--dim);line-height:1.8;font-weight:200;">Garment spec, artwork file, and metadata record — each independently hashed at production time.</p>
+        </div>
+        <div style="background:#060606;padding:2rem;">
+          <div style="font-size:0.52rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--dim);margin-bottom:1rem;">02 — MARK</div>
+          <div style="font-size:0.8rem;font-weight:600;margin-bottom:0.75rem;">Creator mark + Artifact ID</div>
+          <p style="font-size:0.72rem;color:var(--dim);line-height:1.8;font-weight:200;">CA-AI-CHUNK-0001. CAC-MARK-001. Printed on the interior label. Registered on release.</p>
+        </div>
+        <div style="background:#060606;padding:2rem;">
+          <div style="font-size:0.52rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--dim);margin-bottom:1rem;">03 — VERIFY</div>
+          <div style="font-size:0.8rem;font-weight:600;margin-bottom:0.75rem;">Scan or look it up</div>
+          <p style="font-size:0.72rem;color:var(--dim);line-height:1.8;font-weight:200;">QR on the garment or manual ID entry. The static registry returns the full authenticated record instantly.</p>
+        </div>
+        <div style="background:#060606;padding:2rem;">
+          <div style="font-size:0.52rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--dim);margin-bottom:1rem;">04 — PERMANENT</div>
+          <div style="font-size:0.8rem;font-weight:600;margin-bottom:0.75rem;">The record outlives the brand</div>
+          <p style="font-size:0.72rem;color:var(--dim);line-height:1.8;font-weight:200;">Plain JSON. No proprietary tooling. No database. Anyone with a browser can verify this.</p>
+        </div>
+      </div>
+
+      <div class="reveal" style="margin-top:2.5rem;">
+        <a href="pages/verify.html" class="btn">Open Verification Terminal →</a>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule" />
+
+  <!-- LIFESTYLE COLLAGE -->
+  <section class="section" style="padding:0;overflow:hidden;">
+    <img
+      src="assets/img/lifestyle-collage.png"
+      alt="Drop 001 lifestyle shots — developers in the wild"
+      style="width:100%;display:block;max-height:80vh;object-fit:cover;object-position:top;"
+      class="reveal"
+      loading="lazy"
+    />
+  </section>
+
+  <hr class="rule" />
+
+  <!-- DROP CTA -->
+  <section class="section">
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:2rem;">
+      <div>
+        <div class="section-label reveal">Drop 001</div>
+        <div class="reveal" style="font-size:clamp(1.4rem,3vw,2.2rem);font-weight:600;line-height:1.2;margin-top:0.5rem;">
+          AI Gits Better By The Chunk<br/>
+          <span style="color:var(--dim);font-weight:200;">$42.00 — 500 Editions</span>
+        </div>
+      </div>
+      <div class="reveal" style="display:flex;gap:1rem;flex-wrap:wrap;">
+        <a href="pages/drop001.html" class="btn btn-fill">Get the Drop</a>
+        <a href="pages/verify.html" class="btn btn-sm">Verify CA-AI-CHUNK-0001</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="nav-logo-mark">CA</span>
+            Cyber Apparel Co.
+          </div>
+          <div class="footer-tagline">
+            Authenticated Apparel.<br/>
+            Timestamped. Hashed. Real.<br/>
+            For the people who ship.
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/drop001.html">Drop 001</a></li>
+            <li><a href="pages/verify.html">Verify</a></li>
+            <li><a href="pages/about.html">About</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Registry</div>
+          <ul class="footer-links">
+            <li><a href="pages/legal.html">Legal / Marks</a></li>
+            <li><a href="pages/verify.html?id=CA-AI-CHUNK-0001">CA-AI-CHUNK-0001</a></li>
+            <li><a href="artifacts/CA-AI-CHUNK-0001/certificate.txt">Certificate.txt</a></li>
+            <li><a href="data/site-manifest.json">Site Manifest</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2025 Cyber Apparel Co. All rights reserved.</span>
+        <span class="footer-copy">CAC-MARK-001 / CA-AI-CHUNK-0001</span>
+      </div>
+    </div>
+  </footer>
+
+</div><!-- /page-wrap -->
+<script src="assets/js/main.js"></script>
+</body>
+</html>

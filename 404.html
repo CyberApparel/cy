@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — Cyber Apparel Co.</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    .four-oh-four {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .four-oh-four-num {
+      font-size: clamp(6rem, 20vw, 16rem);
+      font-weight: 600;
+      line-height: 1;
+      color: rgba(255,255,255,0.04);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      user-select: none;
+      letter-spacing: -0.04em;
+    }
+    .four-oh-four-content {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav-logo">
+    <span class="nav-logo-mark">CA</span>
+    Cyber Apparel Co.
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="pages/drop001.html">Drop 001</a></li>
+    <li><a href="pages/verify.html">Verify</a></li>
+    <li><a href="pages/about.html">About</a></li>
+    <li><a href="pages/legal.html">Legal / Marks</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="pages/drop001.html">Drop 001</a>
+  <a href="pages/verify.html">Verify</a>
+  <a href="pages/about.html">About</a>
+  <a href="pages/legal.html">Legal / Marks</a>
+</div>
+
+<div class="four-oh-four">
+  <div class="four-oh-four-num" aria-hidden="true">404</div>
+  <div class="four-oh-four-content">
+    <div style="font-size:0.6rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--dim);margin-bottom:1.5rem;">
+      Error — Page Not Found
+    </div>
+    <h1 style="font-size:clamp(1.4rem,3vw,2rem);font-weight:600;line-height:1.2;margin-bottom:1rem;">
+      This chunk doesn't exist.
+    </h1>
+    <p style="font-size:0.78rem;color:var(--dim);max-width:360px;line-height:1.8;font-weight:200;margin-bottom:2rem;">
+      The page you're looking for isn't in the registry.<br/>
+      Try the home page or verify your artifact directly.
+    </p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+      <a href="index.html" class="btn btn-fill">← Go Home</a>
+      <a href="pages/verify.html" class="btn btn-sm">Verify Artifact</a>
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
